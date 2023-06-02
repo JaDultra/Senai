@@ -1,0 +1,303 @@
+* {
+    /* RESET */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cinza-principal: rgb(39, 39, 39);
+    --amarelo: rgb(255, 183, 27);
+    --branco: #fafafa;
+    --cinza-claro: #ececec;
+    --cinza-escuro: #565656;
+    --preto: #111111;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+/* Formatação do HEADER */
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--cinza-principal);
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    width: 960px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    width: 200px;
+}
+
+header nav .logo img {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited {
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 183, 27);
+    transition: 0.5s;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+header nav ul li:hover {
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+
+/* Formatação do MAIN */
+
+main {
+    width: 960px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/* DIV CONTENT */
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content a:link,
+.content a:visited {
+    text-decoration: none;
+}
+
+.content a:hover {}
+
+.content .card {
+    width: 306px;
+    background-color: var(--branco);
+    margin: 20px 0px;
+    border: solid 1px #ececec;
+    border-radius: 10px;
+    color: black;
+    padding: 7px 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .75);
+}
+
+.content .card h3 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.content .card:hover {
+    color: rgb(255, 183, 27);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+}
+
+.content .card img:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+.content .card img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.7s;
+}
+
+
+/* DIV TOP-GENERAL - DEVE CONTER AS MESMAS CONFIGURAÇÕES DO BANNER*/
+
+.top-general {
+    width: 100%;
+}
+
+.top-general h1 {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.top-general>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.imagem {
+    width: 470px;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.top-general div p {
+    width: 470px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.top-general div form {}
+
+.top-general div ul {}
+
+.top-general div ul li {}
+
+
+/* DIV CONTENT-GENERAL */
+
+.content-general {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.content-general .card a:link,
+.content-general .card a:visited {
+    text-decoration: none;
+    width: 225px;
+    line-height: 225px;
+    text-align: center;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.content-general .card a:hover {}
+
+.content-general .card {
+    width: 225px;
+    height: 225px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(5, 0, 0, 1);
+    overflow: hidden;
+}
+
+.content-general .card:nth-child(1) {
+    background-image: url(../assets/prod-racks.webp);
+}
+
+.content-general .card:nth-child(2) {
+    background-image: url(../assets/prod-servers.webp);
+}
+
+.content-general .card:nth-child(3) {
+    background-image: url(../assets/prod-workstations.webp);
+}
+
+.content-general .card:nth-child(4) {
+    background-image: url(../assets/prod-switches.webp);
+}
+
+.content-general .card h3 {
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.content-general .card h3:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.content-general .card img {}
+
+
+/* DIV CONTENT-MAP */
+
+.content-map {}
+
+
+/* Fomatação do FOOTER */
+
+footer {
+    width: 100%;
+    height: 240px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    width: 960px;
+}
+
+footer div ul {
+    text-align: center;
+    width: 225px;
+}
+
+footer div ul li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+footer div ul li a:link,
+footer div ul li a:visited {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+footer div ul li a:hover {
+    color: rgb(255, 183, 27);
+    transition: .5s;
+    font-size: 15px;
+}
+
+footer p {
+    color: var(--branco);
+    font-size: 14px;
+}
+
+.white {}
+
+.gray-one {}
