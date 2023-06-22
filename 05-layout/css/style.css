@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a40711;
+}
+
+nav {
+    margin-top: 10px;
+    width: 1280px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav div img {
+    height: 80px;
+    width: 100px;
+}
+
+.logo {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+nav ul a:link,
+nav ul a:visited {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*width: 1280px; ?????????????????????????????*/
+    background: radial-gradient(#a40711, #353453);
+}
+
+main {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div {
+    align-items: center;
+    gap: 20px
+}
+
+.bloco1 {
+    width: 860px;
+    height: 300px;
+    display: flex;
+}
+
+.bloco2 {
+    width: 860px;
+    height: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bloco3 {
+    width: 860px;
+    height: 300px;
+    display: flex;
+}
+
+
+main .bloco1 img {
+    width: 300px;
+    height: auto;
+}
+
+main .bloco2 img {
+    width: 350px;
+    height: auto;
+}
+
+main .bloco3 img {
+    width: 350px;
+    height: auto;
+}
+
+main .bloco1 h3 {
+    width: 630px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+}
+
+main .bloco2 h3 {
+    width: 630px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+}
+
+main .bloco3 h3 {
+    width: 630px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+}
+
+main h1 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 30px 0px -20px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+aside {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    float: left;
+}
+
+aside ul {}
+
+aside ul li {
+    display: flex;
+    align-items: center;
+    margin: 15px 5px;
+    gap: 5px;
+    background-color: #353453aa;
+    color: white;
+}
+
+aside ul li:hover {
+    border: solid 2px white;
+}
+
+aside ul li div {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside ul li div img {
+    height: 100%;
+    border-radius: 100px;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 144px;
+    background-color: #a40711;
+}
+
+footer p {
+    align-items: center;
+    color: white;
+}
